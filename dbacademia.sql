@@ -26,9 +26,18 @@ create database dbacademia;
 		nome varchar(20),
 		senha varchar(10));
 
+	create table tbprodutos(
+		codigo int,
+		descricao varchar(150),
+		valor decimal(9,2),
+		dataentrada date,
+		horaentrada time,
+		quantidade decimal(9,2));
+
 	--visualizando as tabelas criadas 
 	show tables;
 
 	--visualizando a estrutura das tabelas
 	desc tbfuncionarios;
 	desc tbusuarios;
+	desc tbprodutos;
